@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="icon" href="https://i.ibb.co/zRvp5MR/ON-PLUS-ICONO.png" type="image/x-icon">
 
 <link rel="manifest" href="/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -1624,8 +1625,7 @@ div#st-1 {margin-top:10px}
 
 
 <center>
-<i style="color: #eb9316; font-size: 18px;">EE. UU. vs Guatemala</i>
-
+<i style="color: #eb9316; font-size: 18px;">Blooming vs. Bolívar</i>
 </center>
 
 
@@ -1649,13 +1649,50 @@ div#st-1 {margin-top:10px}
 
 
 
-<iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://voodc.com/embed/1/85818b92a090a086847a85959c899885867d.html" scrolling="no"></iframe>
-<p><strong>Opciones:</strong></p>
 
-<a class="btn btn-md" target="iframe" href="#2" onclick="document.getElementById('iframe').src='https://voodc.com/embed/1/85818b92a090a086847a85959c899885867d.html'; return false;">Opcion HD</a>
-
+<iframe class="shadow-lg rounded" width="100%" style="aspect-ratio:16/9;margin-bottom:20px" name="iframe" id="iframe" title="Live Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://voodc.com/embed/1/85818b92a18fa284847a85959e8d9885877f.html" scrolling="no"></iframe>
+<p>
 
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+
+<div id="player-container">
+  <h1></h1>
+  <audio id="myAudio" src="https://www.youtube.com/embed/36YnV9STBqc?si=hSiCHC2JSr06IDc9"></audio>
+</div>
+<!-- partial -->
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("myAudio");
+  const player = new MediaElementPlayer(audio, {
+    features: ['playpause', 'current', 'progress', 'duration', 'volume', 'tracks', 'fullscreen'],
+    stretching: 'responsive',
+    skin: 'mejs-controls.svg',
+    // Defina os caminhos para os arquivos SVG personalizados
+    // (Opcional, se você deseja substituir os botões padrão do MediaElement.js)
+    playText: 'Reproduzir',
+    pauseText: 'Pausar',
+    muteText: 'Mudo',
+    unmuteText: 'Som',
+    fullscreenText: 'Tela cheia',
+    exitFullscreenText: 'Sair da tela cheia',
+    volumeSliderText: 'Controle de volume',
+    noVolume: 'Sem volume',
+    restoreVolumeText: 'Restaurar volume',
+    downloadFileText: 'Baixar arquivo'
+  });
+});
+
+</script>
+
+<strong>Opciones:</strong></p>
+<a class="btn btn-md" target="iframe" href="#2" onclick="document.getElementById('iframe').src='https://voodc.com/embed/1/85818b92a18fa284847a85959e8d9885877f.html'; return false;">FUTBOL CANAL HD </a>
+
+<a class="btn btn-md" target="iframe" href="#2" onclick="document.getElementById('iframe').src='https://deportesonplus.github.io/transmision/'; return false;">CANAL YT</a>
 
 
 
